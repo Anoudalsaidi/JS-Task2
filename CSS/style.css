@@ -1,0 +1,168 @@
+/*  Start Globel style */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+:root{
+    --bgPrimary-color:rgb(0, 0, 0);
+    --bgSecondery-color:rgba(48, 48, 48, 0.466);
+    --textPrimary-color:rgb(255, 255, 255);
+}
+
+/*_______________________________________________*/
+
+
+/*  Start Nav style */
+
+/*___logo___*/
+.navbar {
+  background-color: transparent;
+  padding: 20px 0;
+  gap: 25px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+  color: var(--textPrimary-color);
+}
+
+.nav-link {
+  color: var(--textPrimary-color);
+  margin-left: 15px;
+  position: relative;
+}
+/*____Underline Nav____*/
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color:var(--textPrimary-color);
+  transition: 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/*  ________________________________________________________________________ */
+
+
+/*  Start Header style */
+
+.Header-section {
+  height: 100vh;
+  background-image: url("./ASSEST/img_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--bgSecondery-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header-section h5 {
+  font-size: 18px;
+}
+
+.Header-section h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.Header-section span {
+  color: var(--textPrimary-color);
+  border-bottom: 3px solid var(--textPrimary-color);
+}
+
+.Header-section p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+    
+/*  ______________________________________________________ */
+
+/*  Start About Me style */
+.AboutMe{
+     width: 100%;
+    height: 500px ;
+    background-color: var(--bgPrimary-color);
+}
+/*  ____________________ */
+
+/*  Start Services style */
+.Services{
+     width: 100%;
+    height: 500px ;
+    background-color: var(--bgSecondery-color);
+}
+/*  ____________________ */
+
+/*  Start Portfolio style */
+.Portfolio{
+     width: 100%;
+    height: 500px ;
+    background-color: var(--bgPrimary-color);
+}
+/*  _____________________ */
+
+/*  Start Testimonials style */
+.Testimonials{
+     width: 100%;
+    height: 500px ;
+    background-color: var(--bgSecondery-color);
+}
+/*  ________________________ */
+
+/*  Start Rating style */
+.Rating{
+     width: 100%;
+    height: 500px ;
+    background-color: var(--bgSecondery-color);
+}
+/*  __________________ */
+
+/*  Start Our Team style */
+.OurTeam{
+     width: 100%;
+    height: 500px ;
+    background-color: var(--bgSecondery-color);
+}
+/*  ____________________ */
+
+/*  Start Contact Us style */
+.ContactUs{
+     width: 100%;
+    height: 500px ;
+    background-color: var(--bgPrimary-color);
+}
+/*  ______________________ */
+
+/*  Start Footer style */
+.Footer{
+     width: 100%;
+    height: 500px ;
+    background-color:var(--bgPrimary-color);
+}
+/*  __________________ */
